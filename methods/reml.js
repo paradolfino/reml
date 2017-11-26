@@ -17,8 +17,12 @@ const reml = {
   },
   read: function(command, ref, path, options) {
     let methods = {
-            
+            REACT: REM_REACT(),
+            DOM: REM_DOM(),
+            IMPORT: REM_IMPORT(ref, path),
+            COMPONENT: REM_COMP(ref, options)
     };
+    return methods[command.toUpperCase()];
   }
 };
 
