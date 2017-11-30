@@ -19,5 +19,15 @@ module.exports = {
             return null;
         }
     }`;
+  },
+  REM_EXPORT: function(ref,options) {
+    switch(options) {
+      case 'default':
+        return `export default ${ref};`;
+        break;
+      default:
+        return `export {${ref}};`;
+    }
   }
+
 };
