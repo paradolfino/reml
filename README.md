@@ -15,6 +15,8 @@ That's the idea.
 
 So far RemL can create this:
 
+```javascript
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import OtherComponent from './other-component';
@@ -28,13 +30,13 @@ class App extends React.Component {
     return null;
   }
  }
- 
+```
+
+
  by typing:
  
- [React]
- [DOM]
- [import OtherComponent other-component]
- [component App]
- 
+ ```javascript
+ [React] [DOM] [import OtherComponent other-component] [component App]
+ ```
  Neat, right? I hate typing - that's why I made RemL.
  
