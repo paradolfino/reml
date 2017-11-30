@@ -3,13 +3,18 @@ RemL stands for 'React Eventually Made with Less'. It is a Markup language for g
 
 It's actually just a transpilation tool. You write some syntax like:
 
-[component App is dumb]
 
-which compiles to
+```javascript
+[component App]
+```
 
+which transforms to
+
+```javascript
 export default const App = () => {
   return null;
 }
+```
 
 That's the idea.
 
